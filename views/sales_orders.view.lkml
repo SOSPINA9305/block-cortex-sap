@@ -1959,6 +1959,12 @@ view: sales_orders {
     hidden: no
   }
 
+  measure: total_order_value {
+    type: number
+    sql: sum(${net_price_netwr} + ${tax_amount_in_document_currency_mwsbp}) ;;
+    hidden: no
+  }
+
   measure: fill_rate{
     type: number
     value_format: "0%"

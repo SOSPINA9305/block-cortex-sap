@@ -472,6 +472,18 @@ view: billing {
   # measures for this dimension, but you can also add measures of many different aggregates.
   # Click on the type parameter to see all the options in the Quick Help panel on the right.
 
+  measure: total_billing_value {
+    type: number
+    sql: sum(${net_value_netwr} + ${tax_amount_mwsbk}) ;;
+    hidden: no
+  }
+
+  measure: count_total_billings {
+    type: count_distinct
+    sql: ${billing_document_vbeln} ;;
+    hidden: no
+  }
+
   measure: total_tax_amount_mwsbk {
     type: sum
     sql: ${tax_amount_mwsbk} ;;
