@@ -1960,7 +1960,7 @@ view: sales_orders {
   }
 
   measure: total_order_value {
-    type: number
+    type: sum
     sql: ${net_price_netwr} + ${tax_amount_in_document_currency_mwsbp} ;;
     hidden: no
   }
