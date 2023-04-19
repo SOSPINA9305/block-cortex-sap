@@ -473,8 +473,8 @@ view: billing {
   # Click on the type parameter to see all the options in the Quick Help panel on the right.
 
   measure: total_billing_value {
-    type: number
-    sql: sum(${net_value_netwr} + ${tax_amount_mwsbk}) ;;
+    type: sum
+    sql: if(${sd_document_currency_waerk}='COP',${net_value_netwr}*100,${net_value_netwr}) + ${tax_amount_mwsbk} ;;
     hidden: no
   }
 
