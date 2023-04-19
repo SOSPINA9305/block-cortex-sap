@@ -1959,16 +1959,16 @@ view: sales_orders {
     hidden: no
   }
 
-  dimension: total_order_value_dim {
-    type: number
-    sql: ${net_price_netwr} + ${tax_amount_in_document_currency_mwsbp} ;;
-  }
-
-  #measure: total_order_value {
-   # type: sum
-    #sql: ${net_price_netwr} + ${tax_amount_in_document_currency_mwsbp} ;;
-  #  hidden: no
+ # dimension: total_order_value_dim {
+  #  type: number
+   # sql: ${net_price_netwr} + ${tax_amount_in_document_currency_mwsbp} ;;
   #}
+
+  measure: total_order_value {
+    type: sum
+    sql: IFNULL(${net_price_netwr} + ${tax_amount_in_document_currency_mwsbp},0) ;;
+    hidden: no
+  }
 
   measure: fill_rate{
     type: number
