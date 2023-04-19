@@ -468,13 +468,20 @@ view: billing {
     hidden: no
   }
 
+
+  dimension: tax_amount_item_mwsbk {
+    type: number
+    sql: ${TABLE}.TaxAmount_item_MWSBP ;;
+    hidden: no
+  }
+
   # A measure is a field that uses a SQL aggregate function. Here are defined sum and average
   # measures for this dimension, but you can also add measures of many different aggregates.
   # Click on the type parameter to see all the options in the Quick Help panel on the right.
 
   measure: total_billing_value {
     type: sum
-    sql:${net_value_netwr} + ${tax_amount_mwsbk} ;;
+    sql:${net_value_netwr} + ${tax_amount_item_mwsbk} ;;
     hidden: no
   }
 
