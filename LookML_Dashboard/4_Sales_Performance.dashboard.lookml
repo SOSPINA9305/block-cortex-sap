@@ -456,6 +456,19 @@
     width: 24
     height: 2
   filters:
+  - name: Your Reference Ihrez
+    title: Your Reference Ihrez
+    type: field_filter
+    default_value: ''
+    allow_multiple_values: true
+    required: false
+    ui_config:
+      type: checkboxes
+      display: popover
+    model: cortex_sap_operational
+    explore: sales_orders
+    listens_to_filters: []
+    field: sales_orders.your_reference_ihrez
   - name: Year
     title: Year
     type: field_filter
