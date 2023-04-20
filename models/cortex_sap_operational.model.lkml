@@ -64,8 +64,8 @@ explore: sales_orders {
   join: billing {
     type: left_outer
     relationship: one_to_many
-    sql_on: ${sales_orders.sales_document_vbeln}=${billing.billing_document_vbeln}
-          and ${sales_orders.item_posnr}=${billing.billing_item_posnr}
+    sql_on: ${sales_orders.sales_document_vbeln}=${billing.sales_document_aubel}
+          and ${sales_orders.item_posnr}=${billing.sales_document_item_aupos}
           and ${sales_orders.client_mandt}=${billing.client_mandt} ;;
   }
 
