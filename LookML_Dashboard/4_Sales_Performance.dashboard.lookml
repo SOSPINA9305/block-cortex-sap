@@ -463,8 +463,8 @@
     allow_multiple_values: true
     required: false
     ui_config:
-      type: checkboxes
-      display: popover
+      type: dropdown_menu
+      display: inline
     model: cortex_sap_operational
     explore: sales_orders
     listens_to_filters: []
@@ -472,7 +472,7 @@
   - name: Year
     title: Year
     type: field_filter
-    default_value: 2022/01/01 to 2022/04/22
+    default_value: 2023/01/01 to 2023/04/22
     allow_multiple_values: true
     required: false
     ui_config:
