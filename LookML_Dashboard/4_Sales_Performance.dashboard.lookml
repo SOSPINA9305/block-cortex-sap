@@ -456,8 +456,8 @@
     width: 24
     height: 2
   filters:
-  - name: Your Reference Ihrez
-    title: Your Reference Ihrez
+  - name: Campaign
+    title: Campaign
     type: field_filter
     default_value: ''
     allow_multiple_values: true
@@ -486,7 +486,7 @@
   - name: Currency
     title: Currency
     type: field_filter
-    default_value: USD
+    default_value: COP
     allow_multiple_values: true
     required: true
     ui_config:
