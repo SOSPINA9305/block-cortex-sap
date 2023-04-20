@@ -66,6 +66,7 @@
     defaults_version: 1
     hidden_fields: []
     listen:
+      Campaign: sales_orders.your_reference_ihrez
       Year: sales_orders.creation_date_erdat_date
       Division: divisions_md.division_name_vtext
       Currency: currency_conversion_new.tcurr
@@ -129,6 +130,7 @@
     defaults_version: 1
     hidden_fields: []
     listen:
+      Campaign: sales_orders.your_reference_ihrez
       Year: sales_orders.creation_date_erdat_date
       Division: divisions_md.division_name_vtext
       Currency: currency_conversion_new.tcurr
@@ -204,6 +206,7 @@
     hidden_fields: []
     y_axes: []
     listen:
+      Campaign: sales_orders.your_reference_ihrez
       Year: sales_orders.creation_date_erdat_date
       Division: divisions_md.division_name_vtext
       Currency: currency_conversion_new.tcurr
@@ -246,6 +249,7 @@
     hidden_fields: []
     y_axes: []
     listen:
+      Campaign: sales_orders.your_reference_ihrez
       Year: sales_orders.creation_date_erdat_date
       Division: divisions_md.division_name_vtext
       Currency: currency_conversion_new.tcurr
@@ -289,6 +293,7 @@
     defaults_version: 1
     series_types: {}
     listen:
+      Campaign: sales_orders.your_reference_ihrez
       Year: sales_orders.creation_date_erdat_date
       Division: divisions_md.division_name_vtext
       Currency: currency_conversion_new.tcurr
@@ -352,6 +357,7 @@
     defaults_version: 1
     hidden_fields: []
     listen:
+      Campaign: sales_orders.your_reference_ihrez
       Year: sales_orders.creation_date_erdat_date
       Division: divisions_md.division_name_vtext
       Currency: currency_conversion_new.tcurr
@@ -412,6 +418,7 @@
       sales_orders.sales_order_net_price_global_currency: "#F29ED2"
     defaults_version: 1
     listen:
+      Campaign: sales_orders.your_reference_ihrez
       Year: sales_orders.creation_date_erdat_date
       Division: divisions_md.division_name_vtext
       Currency: currency_conversion_new.tcurr
@@ -444,6 +451,7 @@
     series_types: {}
     defaults_version: 1
     listen:
+      Campaign: sales_orders.your_reference_ihrez
       Year: sales_orders.creation_date_erdat_date
       Division: divisions_md.division_name_vtext
       Currency: currency_conversion_new.tcurr
