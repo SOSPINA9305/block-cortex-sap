@@ -64,8 +64,8 @@ explore: sales_orders {
   join: billing {
     type: left_outer
     relationship: one_to_many
-    sql_on: ${sales_orders.sales_document_vbeln}=${billing.sales_document_aubel}
-          and ${sales_orders.item_posnr}=${billing.sales_document_item_aupos}
+    sql_on: ${sales_orders.sales_document_vbeln}=${billing.billing_document_vbeln}
+          and ${sales_orders.item_posnr}=${billing.billing_item_posnr}
           and ${sales_orders.client_mandt}=${billing.client_mandt} ;;
   }
 
@@ -255,7 +255,7 @@ explore: inventory_metrics_overview {
     type: left_outer
     relationship: many_to_one
     fields: [inventory_by_plant.stock_characteristic]
-    sql_on: ${inventory_by_plant.client_mandt} = ${inventory_metrics_overview.client_mandt} 
+    sql_on: ${inventory_by_plant.client_mandt} = ${inventory_metrics_overview.client_mandt}
       and ${inventory_by_plant.company_code_bukrs} = ${inventory_metrics_overview.company_code_bukrs}
     ;;
   }
